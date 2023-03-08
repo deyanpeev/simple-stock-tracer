@@ -1,11 +1,21 @@
-import requests
-from bs4 import BeautifulSoup
+from datetime import datetime
 
-def get_amazon_price():
-    url = "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey={key}"
-    res = requests.get(url)
-    data = res.json()
+# # import requests
+# # from bs4 import BeautifulSoup
 
-    return data
+# def get_amazon_price():
+#     url = "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey={key}"
+#     res = requests.get(url)
+#     data = res.json()
 
-print(get_amazon_price())
+#     return data
+
+# print(get_amazon_price())
+
+a = "dads,dasd"
+b=a.split(',')
+print(type(a))
+print(b)
+
+
+print(datetime.now())
